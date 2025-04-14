@@ -68,7 +68,7 @@ order by rc.revenue desc;
 
 -- 4. Display the titles of films not present in the inventory. Write the query without using the IN operator.
 
-With IN operator:
+-- With IN operator:
 select 
 	title
 from film
@@ -78,7 +78,7 @@ where film_id not in (
 	from inventory
 );
 
-Without IN operator
+-- Without IN operator
 select 
 	f.title
 from film f 
